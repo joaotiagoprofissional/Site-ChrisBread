@@ -17,8 +17,8 @@ export function Menu(){
                 <li><a href="/">Contatos</a></li>
             </ul>
             <div className="icons">
-                    <a href="#" target='_blank' rel='noopener noreferrer'><FaGithub /></a>
-                    <a href="#" target='_blank' rel='noopener noreferrer'><FaWhatsapp/></a>
+                    <a href="https://github.com/joaotiagoprofissional/Site-ChrisBread" target='_blank' rel='noopener noreferrer'><FaGithub /></a>
+                    <a href="https://wa.me/5521972149736?text=ol%C3%A1%20vim%20pelo%20projeto%20Chris%20Bread" target='_blank' rel='noopener noreferrer'><FaWhatsapp/></a>
             </div>
         </nav>
     )
