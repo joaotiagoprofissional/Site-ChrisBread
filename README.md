@@ -1,73 +1,58 @@
-# React + TypeScript + Vite
+🍞 Chris Bread
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interface de um site para padaria desenvolvida com foco em apresentação de produtos e experiência do usuário.
 
-Currently, two official plugins are available:
+Este projeto começou com uma estrutura simples em HTML, CSS e JavaScript, mas foi totalmente reestruturado utilizando React com TypeScript, buscando um código mais organizado, reutilizável e preparado para evolução.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+📸 Preview do projeto
 
-## React Compiler
+<p align="center">
+  <img src="./src/assets/images/preview.png" alt="Preview do projeto" width="800"/>
+</p>
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+💻 Tecnologias
+React
+TypeScript
+CSS
+Vite
+🔄 Sobre a evolução do projeto
 
-## Expanding the ESLint configuration
+A primeira versão foi construída de forma estática.
+Com a evolução, surgiu a necessidade de melhorar a organização e escalabilidade, então foi feita a migração completa para React com TypeScript.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Essa mudança permitiu:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Separação por componentes
+Reutilização de código
+Melhor controle de estados
+Estrutura mais próxima de projetos reais do mercado
+🚧 Em desenvolvimento
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+O projeto ainda não está finalizado. Próximos passos:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```
+🛒 Implementar carrinho de compras
+📱 Ajustar responsividade (mobile e tablet)
+🎨 Melhorar alguns detalhes de interface
+🌐 Deploy
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+O projeto ainda não possui deploy.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+A ideia é publicar assim que as funcionalidades principais (como o carrinho e responsividade) estiverem concluídas.
 ```
+▶️ Como rodar localmente
+npm install
+npm run dev
+🎯 Objetivo
+```
+
+Esse projeto faz parte do meu processo de evolução como desenvolvedor, com foco em:
+```
+Construção de interfaces modernas
+Boas práticas com React
+Organização e escalabilidade de código
+📌 Observação
+```
+
+Esse projeto continuará sendo atualizado conforme novas funcionalidades forem sendo implementadas.
