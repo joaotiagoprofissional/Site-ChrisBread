@@ -1,0 +1,29 @@
+.container-hero{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.text{
+    position: absolute;
+    width: 500px;
+    top: 25%;
+    left: 10%;
+}
+
+.text h1, p{
+    color: #fff;
+    text-shadow: 2px 2px 4px #000;
+}
+
+.text h1{
+    margin-bottom: 20px;
+}
+
+.text p{
+    font-weight: bold;
+}
+
+
+
+

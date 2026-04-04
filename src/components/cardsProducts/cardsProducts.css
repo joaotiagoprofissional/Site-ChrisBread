@@ -1,0 +1,73 @@
+.container-products{
+    width: 100%;
+    
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.container-card-products{
+    background-color: #000000cb;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    flex: 0 1 300px;
+}
+
+.container-card-products img{
+    height: 200px;
+    width: 250px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 50px;
+}
+
+.icon{
+    font-size: 1.2rem;
+    color: #fff;
+    position: absolute;
+    top: 67%;
+    left: 90%;
+    cursor: pointer;
+}
+
+.value-weigth, .title-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.value-weight{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.container-card-products h4{
+    color: #fff;
+}
+
+.btn-amount{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-amount button{
+    width: 30px;
+    height: 25px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
