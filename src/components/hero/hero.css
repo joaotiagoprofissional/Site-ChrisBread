@@ -24,6 +24,17 @@
     font-weight: bold;
 }
 
+@media (max-width: 768px){
+
+    .text{
+        width: 100%;
+        top: 200px;
+        left: 0;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
 
 
 

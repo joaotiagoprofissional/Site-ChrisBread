@@ -20,6 +20,10 @@
     gap: 4px;
 }
 
+.git-hub{
+    margin: 10px 0;
+}
+
 .icon-zap, .icon-git{
     font-size: 1.2rem;
     color: #fff;
@@ -42,4 +46,22 @@
 
 .text-italic{
     font-style: italic;
+}
+
+@media (max-width: 768px){
+    .container-section{
+        flex-direction: column;
+    }
+
+    .zap, .git-hub{
+    justify-content: center;
+}
+
+    .phone-address h4{
+        display: none;
+    }
+
+    .address{
+        margin-bottom: 10px;
+    } 
 }

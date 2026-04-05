@@ -9,18 +9,16 @@ export function Footer(){
         <>
             <section className="container-section">
                 <div className="phone-address">
-                    <a className="phone" href="">
-                        <div className="zap">
-                            <span className="icon-zap"><FaWhatsapp /></span>
-                            <p>(21) 97214-9736</p>
-                        </div>
-                        <div className="git-hub">
+                    <a className="zap" href="https://wa.me/5521972149736?text=ol%C3%A1%20vim%20pelo%20projeto%20Chris%20Bread" target='_blank' rel='noopener noreferrer'>
+                        <span className="icon-zap"><FaWhatsapp /></span>
+                        <p>(21) 97214-9736</p>
+                    </a>
+                        <a className="git-hub" href="https://github.com/joaotiagoprofissional/Site-ChrisBread" target="_blank">
                             <span className="icon-git"><FaGithub /></span>
                             <p>Repositório</p>
-                        </div>
-                    </a>
+                        </a>
                     <h4>Endereço:</h4>
-                    <p>Rua da Padaria, nº X, Bairro Y - Rio de Janeiro-RJ</p>
+                    <p className="address" >Rua da Padaria, nº X, Bairro Y - Rio de Janeiro-RJ</p>
                 </div>
                 <div className="map">
                     <iframe
