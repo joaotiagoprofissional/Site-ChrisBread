@@ -1,8 +1,8 @@
 .container-products{
     width: 100%;
-    
+    background-color: bisque;
     height: 100%;
-    padding: 20px;
+    padding: 80px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,6 +29,12 @@
     margin-bottom: 50px;
 }
 
+.container-card-products h2{
+    text-align: center;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
 .icon{
     font-size: 1.2rem;
     color: #fff;
@@ -46,28 +52,22 @@
 
 .value-weight{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 10px 0;
 }
 
-.container-card-products h4{
-    color: #fff;
-}
-
-.btn-amount{
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.btn-amount button{
-    width: 30px;
-    height: 25px;
+.container-card-products button{
+    background-color: transparent;
     border: 1px solid #fff;
     border-radius: 5px;
-    background-color: transparent;
     color: #fff;
-    font-weight: 400;
-    font-size: 1.2rem;
+    height: 30px;
     cursor: pointer;
+    transition: all 0.5s;
+}
+
+.container-card-products button:hover{
+    background-color: #fff;
+    color: #000;
+    border: none;
 }

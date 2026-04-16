@@ -1,17 +1,14 @@
-import { Menu } from './components/menu/Menu'
-import { Hero } from './components/hero/Hero'
-import { Products } from './pages/products/Products'
-import { Footer } from './components/footer/Footer'
+import {CartProvider} from "./contexts/CartContext"
+import { RoutesApp } from "./RoutesApp"
+
 
 
 function App() {
   return (
-    <>
-      <Menu />
-      <Hero />
-      <Products />
-      <Footer />
-    </>
+    <CartProvider>
+      <RoutesApp />
+    </CartProvider>
+
   )
 }
 

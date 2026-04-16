@@ -1,48 +1,41 @@
-import { useState } from "react"
+import { useContext } from "react"
+import { CartContext } from "../../contexts/CartContext"
 import { FaInfoCircle } from "react-icons/fa"
+import cards, { type Card } from "../cards/Cards"
+
 
 import './cardsProducts.css'
 
 
-type Props = {
-    image: string
-    title: string
-    price: string
-    weigth: string
-}
 
-export function CardsProducts({ image, title, price, weigth }: Props){
-    const [ amount, setAmount ] = useState(1)
 
-    function add(){
-        setAmount ((prev)=> prev +1)
-    }
 
-    function remove(){
-        setAmount((prev)=> (prev > 1 ? prev -1 : 1))
+export function CardsProducts(){
+
+    const { addItemCart } = useContext(CartContext)
+
+    function handleAddCart(item: Card){
+        addItemCart(item)
     }
 
     return(
         <section>
-            <div>
-                <div className="container-card-products">
-                    <img src={image} alt={title} />
-                    <span className="icon">
-                        <FaInfoCircle />
-                    </span>
-                    <div className="value-weight">
-                        <p>{price}</p>
-                        <p>{weigth}</p>
-                    </div>
-                    <div className="title-btn">
-                        <h4 style={{ whiteSpace: "pre-line" }}>{title}</h4>
-                        <div className="btn-amount">
-                            <button onClick={remove}>-</button>
-                            <p>{amount}</p>
-                            <button onClick={add}>+</button>
+            <div className="container-products">
+                {cards.map((item)=> (
+                    <div className="container-card-products" key={item.id}>
+                        <img src={item.image} alt={item.title} />
+                        <h2>{item.title}</h2>
+                        <span className="icon">
+                            <FaInfoCircle />
+                        </span>
+                        <div className="value-weight">
+                            <p>{item.price}</p>
+                            <p>{item.weight}</p>
                         </div>
+                        <button onClick={() => handleAddCart(item)} >Add Carrinho</button>
                     </div>
-                </div>
+                ))}
+                
             </div>
         </section>
     )

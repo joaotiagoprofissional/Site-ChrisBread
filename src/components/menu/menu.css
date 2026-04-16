@@ -6,6 +6,13 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    position: fixed;
+    z-index: 100;
+    transition: background-color 0.3s ease;
+}
+
+.container-menu.scrolled{
+    background-color: #000;
 }
 
 .container-menu img{
@@ -51,6 +58,25 @@
     display: inline-flex;
     align-items: center;
     gap: 10px;
+}
+
+.cart{
+    position: relative;
+}
+
+.number-cart{
+    position: absolute;
+    top: -10px;
+    left: 22px;
+    background-color: tomato;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
 }
 
 @media (max-width: 768px) {
