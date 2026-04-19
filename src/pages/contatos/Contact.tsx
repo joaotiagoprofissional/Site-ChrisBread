@@ -42,7 +42,7 @@ export function Contact(){
     }
 
     return(
-        <div className='container-contacts'>
+        <div className='container-contacts' id='contacts'>
             <h1>Entre em Contato</h1>
             <form className='form' action="" onSubmit={sendEmail}>
 

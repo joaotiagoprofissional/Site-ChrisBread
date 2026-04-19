@@ -18,6 +18,7 @@ type CartProps = {
     title: string
     amount: number
     total: number
+    description: string
 }
 
 type CartProviderProps = {
@@ -72,7 +73,7 @@ export function CartProvider({children}: CartProviderProps){
         totalResultCart(removeItem)
     }
 
-    function totalResultCart(itens: CartProps){
+    function totalResultCart(itens: CartProps[]){
         let myCart = itens
         let result = myCart.reduce((acc, obj) => {return acc + obj.total}, 0)
         const resulFormated = result.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})

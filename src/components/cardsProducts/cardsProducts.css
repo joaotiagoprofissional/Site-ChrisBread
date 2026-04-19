@@ -37,11 +37,14 @@
 
 .icon{
     font-size: 1.2rem;
-    color: #fff;
     position: absolute;
     top: 67%;
     left: 90%;
     cursor: pointer;
+}
+
+.icon a{
+    color: #fff;
 }
 
 .value-weigth, .title-btn{

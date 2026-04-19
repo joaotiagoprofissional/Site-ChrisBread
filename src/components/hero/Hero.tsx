@@ -2,7 +2,7 @@ import './hero.css'
 
 export function Hero(){
     return(
-        <div className="container-hero">
+        <div className="container-hero" id='hero'>
             <div className="text">
                 <h1>TRADICIONAL<br />PADARIA ARTESANAL</h1>
                 <p>
@@ -12,6 +12,7 @@ export function Hero(){
                     Aqui, cada fornada é feita com tempo, técnica e paixão para que você sinta, a
                     cada mordida, o verdadeiro gosto de padaria de verdade.
                 </p>
+                 <a href="#products"><button id='products'>Produtos</button></a>
             </div>
         </div>
     )

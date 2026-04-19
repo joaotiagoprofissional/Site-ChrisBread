@@ -5,6 +5,7 @@ import { Footer } from "./components/footer/Footer";
 import { Cart } from "./pages/cart/Cart";
 import { CardsProducts } from "./components/cardsProducts/CardsProducts";
 import { Contact } from "./pages/contatos/Contact";
+import { Details } from "./pages/details/Details";
 
 
 export function RoutesApp(){
@@ -21,6 +22,7 @@ export function RoutesApp(){
                 } />
                 <Route path="/carrinho" element={ <Cart /> } />
                 <Route path="/produtos" element={ <CardsProducts /> } />
+                <Route path="/detalhes/:id" element={ <Details /> } />
             </Routes>
             <Footer />
         </BrowserRouter>

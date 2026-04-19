@@ -7,7 +7,7 @@ import './footer.css'
 export function Footer(){
     return(
         <>
-            <section className="container-section">
+            <section className="container-section" id="localization">
                 <div className="phone-address">
                     <a className="zap" href="https://wa.me/5521972149736?text=ol%C3%A1%20vim%20pelo%20projeto%20Chris%20Bread" target='_blank' rel='noopener noreferrer'>
                         <span className="icon-zap"><FaWhatsapp /></span>

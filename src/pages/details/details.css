@@ -1,0 +1,57 @@
+.details-container{
+    padding: 100px;
+}
+
+.card-container{
+    background-color: bisque;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    width: 100%;
+}
+
+.details-container img{
+    display: block;
+    width: 300px;
+}
+
+.title-description-btn{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.title-description-btn h2{
+    margin-bottom: 20px;
+}
+
+.title-description-btn p{
+    color: #000;
+    text-shadow: none;
+}
+
+.title-description-btn button{
+    background-color: tomato;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    width: 100%;
+    margin: 20px auto;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.title-description-btn button:hover{
+    background-color: transparent;
+    color: tomato;
+    border: 1px solid tomato;
+}
+
+.not-found{
+    padding: 100px;
+    color: #fff;
+    text-align: center;
+}

@@ -51,10 +51,10 @@ export function Menu(){
 
             <ul className={isOpen ? "nav active" : "nav"} >
                 <li><a href="/">Home</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">Produtos</a></li>
-                <li><a href="#">Localização</a></li>
-                <li><a href="#">Contatos</a></li>
+                <li><a href="#hero">Sobre Nós</a></li>
+                <li><a href="#products">Produtos</a></li>
+                <li><a href="#localization">Localização</a></li>
+                <li><a href="#contacts">Contatos</a></li>
             </ul>
             <Link className='cart' to="/carrinho">
                 <FaShoppingCart size={24} />
