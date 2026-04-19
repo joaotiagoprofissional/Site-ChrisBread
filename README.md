@@ -6,6 +6,8 @@ Este projeto foi inicialmente desenvolvido com HTML, CSS e JavaScript puro, e po
 
 <h2>📸 Preview</h2>
 
+![Preview do projeto](./src/public/preview.png)
+
 - 🚀 Tecnologias
 - React
 - TypeScript
@@ -14,6 +16,7 @@ Este projeto foi inicialmente desenvolvido com HTML, CSS e JavaScript puro, e po
 <h2>✨ Funcionalidades</h2>
 
 - 📦 Listagem de produtos
+- 🧾 Página de detalhe do produto
 - 🛒 Carrinho de compras funcional
 - 📩 Seção de contato
 - 🔄 Componentização e reutilização de código
@@ -25,11 +28,14 @@ O projeto passou por uma refatoração completa, saindo de uma estrutura estáti
 
 
 - 🔧 Refatoração dos cards de produtos
+- 🧾 Implementação página de detalhe do produto
 - 🛒 Implementação do carrinho de compras
 - 📩 Criação da seção de contato
 - 📁 Melhor organização de pastas e componentes
 - ⚙️ Tipagem com TypeScript
-- 🚧 Em desenvolvimento
+
+<h2>🚧 Em desenvolvimento</h2>
+
 - 📱 Responsividade completa
 - 🎨 Ajustes finos de UI/UX
 - 🌐 Deploy da aplicação
@@ -49,15 +55,14 @@ Este projeto faz parte da minha evolução como desenvolvedor, com foco em:
 
 <h2>📌 Status do Projeto</h2>
 
-🟡 Em desenvolvimento
-
-Última atualização:
+Últimas atualizações:
 
 - Refatoração dos cards de produtos
+- Página de detalhe dos produtos
 - Carrinho de compras funcional
 - Seção de contato implementada
 
-📅 15/04/2026
+📅 18/04/2026
 
 <h2>📎 Observação</h2>
 
