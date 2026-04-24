@@ -13,6 +13,7 @@ Este projeto foi inicialmente desenvolvido com HTML, CSS e JavaScript puro, e po
 - TypeScript
 - CSS
 - Vite
+
 <h2>✨ Funcionalidades</h2>
 
 - 📦 Listagem de produtos
@@ -20,12 +21,10 @@ Este projeto foi inicialmente desenvolvido com HTML, CSS e JavaScript puro, e po
 - 🛒 Carrinho de compras funcional
 - 📩 Seção de contato
 - 🔄 Componentização e reutilização de código
-- 🔄 Evolução do Projeto
 
 O projeto passou por uma refatoração completa, saindo de uma estrutura estática para uma arquitetura moderna baseada em componentes.
 
 <h2>Principais melhorias:</h2>
-
 
 - 🔧 Refatoração dos cards de produtos
 - 🧾 Implementação página de detalhe do produto
@@ -33,12 +32,6 @@ O projeto passou por uma refatoração completa, saindo de uma estrutura estáti
 - 📩 Criação da seção de contato
 - 📁 Melhor organização de pastas e componentes
 - ⚙️ Tipagem com TypeScript
-
-<h2>🚧 Em desenvolvimento</h2>
-
-- 📱 Responsividade completa
-- 🎨 Ajustes finos de UI/UX
-- 🌐 Deploy da aplicação
 
 <h2>▶️ Como rodar o projeto</h2>
 
@@ -52,6 +45,8 @@ Este projeto faz parte da minha evolução como desenvolvedor, com foco em:
 - Construção de interfaces modernas
 - Boas práticas com React
 - Organização e escalabilidade de código
+- Tipagem segura com TypeScript
+- Gerenciamento de estado global com Context API
 
 <h2>📌 Status do Projeto</h2>
 
@@ -63,7 +58,3 @@ Este projeto faz parte da minha evolução como desenvolvedor, com foco em:
 - Seção de contato implementada
 
 📅 18/04/2026
-
-<h2>📎 Observação</h2>
-
-O projeto continuará sendo atualizado com novas funcionalidades e melhorias contínuas.
