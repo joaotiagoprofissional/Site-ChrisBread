@@ -75,3 +75,19 @@
     border-radius: 5px;
     font-weight: bold;
 }
+
+@media (max-width: 768px){
+
+    .item-cart{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px
+    }
+
+    .item-cart img{
+        margin-bottom: 20px;
+    }
+
+}
