@@ -10,7 +10,7 @@ import { Details } from "./pages/details/Details";
 
 export function RoutesApp(){
     return(
-        <BrowserRouter>
+        <BrowserRouter basename="/Site-ChrisBread/">
             <Menu />
             <Routes>
                 <Route path="/" element={ 
