@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { HashRouter, Route, Routes } from "react-router-dom";
 import { Menu } from "./components/menu/Menu";
 import { Hero } from "./components/hero/Hero";
 import { Footer } from "./components/footer/Footer";
@@ -10,7 +10,7 @@ import { Details } from "./pages/details/Details";
 
 export function RoutesApp(){
     return(
-        <BrowserRouter basename="/Site-ChrisBread/">
+        <HashRouter basename="/Site-ChrisBread/">
             <Menu />
             <Routes>
                 <Route path="/" element={ 
@@ -25,6 +25,6 @@ export function RoutesApp(){
                 <Route path="/detalhes/:id" element={ <Details /> } />
             </Routes>
             <Footer />
-        </BrowserRouter>
+        </HashRouter>
     )
 }

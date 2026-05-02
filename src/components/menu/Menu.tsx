@@ -43,14 +43,14 @@ export function Menu(){
 
     return(
         <nav className={`container-menu ${scrolled ? 'scrolled' : ''}`}>
-            <a href="/"><img src={logo} alt="Logo Empresa" /></a>
+            <Link to="/"><img src={logo} alt="Logo Empresa" /></Link>
 
             <button className='menu-btn' onClick={toggleMenu} >
                 {isOpen ? <FaTimes /> : <FaBars />}
             </button>
 
             <ul className={isOpen ? "nav active" : "nav"} >
-                <li><a href="/">Home</a></li>
+                <li><Link to="/">Home</Link></li>
                 <li><a href="#hero">Sobre Nós</a></li>
                 <li><a href="#products">Produtos</a></li>
                 <li><a href="#localization">Localização</a></li>
