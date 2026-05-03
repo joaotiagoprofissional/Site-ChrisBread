@@ -33,6 +33,10 @@
     font-size: 1.2rem;
 }
 
+.phone-address p{
+    color: #fff;
+}
+
 .container-section h4{
     font-style: italic;
     color: #fff;
