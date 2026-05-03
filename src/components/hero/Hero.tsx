@@ -1,5 +1,3 @@
-import bg from '../../assets/images/bg.jpg'
-
 import './hero.css'
 
 export function Hero(){
