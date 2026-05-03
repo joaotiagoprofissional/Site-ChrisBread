@@ -10,8 +10,6 @@ import { useContext, useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { CartContext } from '../../contexts/CartContext';
 
-
-
 export function Menu(){
     const [ isOpen, setIsOpen ] = useState(false)
     const [ scrolled, setScrolled ] = useState(false)
@@ -32,39 +30,79 @@ export function Menu(){
         return () => {
             window.removeEventListener('scroll', handleScroll)
         }
-
-
     }, [])
-
 
     function toggleMenu(){
         setIsOpen(!isOpen)
     }
 
+    // 🚀 função de scroll suave
+    function scrollToSection(id: string){
+        const element = document.getElementById(id)
+        if(element){
+            element.scrollIntoView({ behavior: "smooth" })
+            setIsOpen(false) // fecha menu mobile
+        }
+    }
+
     return(
         <nav className={`container-menu ${scrolled ? 'scrolled' : ''}`}>
-            <Link to="/"><img src={logo} alt="Logo Empresa" /></Link>
+            
+            <Link to="/">
+                <img src={logo} alt="Logo Empresa" />
+            </Link>
 
             <button className='menu-btn' onClick={toggleMenu} >
                 {isOpen ? <FaTimes /> : <FaBars />}
             </button>
 
             <ul className={isOpen ? "nav active" : "nav"} >
-                <li><Link to="/">Home</Link></li>
-                <li><a href="#hero">Sobre Nós</a></li>
-                <li><a href="#products">Produtos</a></li>
-                <li><a href="#localization">Localização</a></li>
-                <li><a href="#contacts">Contatos</a></li>
+                <li>
+                    <Link to="/" onClick={() => setIsOpen(false)}>Home</Link>
+                </li>
+
+                <li>
+                    <button onClick={() => scrollToSection("hero")}>Sobre Nós</button>
+                </li>
+
+                <li>
+                    <button onClick={() => scrollToSection("products")}>Produtos</button>
+                </li>
+
+                <li>
+                    <button onClick={() => scrollToSection("localization")}>Localização</button>
+                </li>
+
+                <li>
+                    <button onClick={() => scrollToSection("contacts")}>Contatos</button>
+                </li>
             </ul>
+
             <Link className='cart' to="/carrinho">
                 <FaShoppingCart size={24} />
                 {cartAmount > 0 && (
-                    <span className="number-cart">{cartAmount > 99 ? "99+" : cartAmount}</span>
+                    <span className="number-cart">
+                        {cartAmount > 99 ? "99+" : cartAmount}
+                    </span>
                 )}
             </Link>
+
             <div className="icons">
-                    <a href="https://github.com/joaotiagoprofissional/Site-ChrisBread" target='_blank' rel='noopener noreferrer'><FaGithub /></a>
-                    <a href="https://wa.me/5521972149736?text=ol%C3%A1%20vim%20pelo%20projeto%20Chris%20Bread" target='_blank' rel='noopener noreferrer'><FaWhatsapp/></a>
+                <a 
+                    href="https://github.com/joaotiagoprofissional/Site-ChrisBread" 
+                    target='_blank' 
+                    rel='noopener noreferrer'
+                >
+                    <FaGithub />
+                </a>
+
+                <a 
+                    href="https://wa.me/5521972149736?text=ol%C3%A1%20vim%20pelo%20projeto%20Chris%20Bread" 
+                    target='_blank' 
+                    rel='noopener noreferrer'
+                >
+                    <FaWhatsapp/>
+                </a>
             </div>
         </nav>
     )

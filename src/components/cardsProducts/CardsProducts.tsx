@@ -17,8 +17,8 @@ export function CardsProducts(){
     }
 
     return(
-        <section>
-            <div className="container-products" id="products">
+        <section id="products">
+            <div className="container-products" >
                 {cards.map((item)=> (
                     <div className="container-card-products" key={item.id}>
                         <img src={item.image} alt={item.title} />

@@ -57,6 +57,7 @@
     display: flex;
     justify-content: space-around;
     margin: 10px 0;
+    color: #fff;
 }
 
 .container-card-products button{

@@ -10,7 +10,7 @@ import { Details } from "./pages/details/Details";
 
 export function RoutesApp(){
     return(
-        <HashRouter basename="/Site-ChrisBread/">
+        <HashRouter>
             <Menu />
             <Routes>
                 <Route path="/" element={ 
